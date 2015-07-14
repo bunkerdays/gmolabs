@@ -1,0 +1,17 @@
+<video autoplay="autoplay" preload="auto" poster="img/bubble-still.png" loop id="my-video">
+  <source src="video/bubble-tiny.mp4" type="video/mp4">
+  <source src="video/bubble-tiny.webmhd.webm" type="video/webm">
+</video>
+<div class="header row center main-header top-index">
+	<h2>Usability that FLOWS</h2></a>
+</div>
+
+<script>
+$('#my-video').backgroundVideo({
+            $outerWrap: $('.outer-wrap'),
+            pauseVideoOnViewLoss: false,
+            parallaxOptions: {
+                effect: 1.0
+            }
+        });
+</script>

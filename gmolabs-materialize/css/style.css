@@ -1,0 +1,190 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+ .left {
+  text-align: left;
+ }
+
+.headshot {
+  height: 200px;
+  width: 200px;
+  margin-top: 55px;
+}
+
+.expander {
+  margin-top: 8px;
+}
+
+.flipped {
+  -ms-transform: rotate(180deg); /* IE 9 */
+  -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+  transform: rotate(180deg);
+}
+
+blockquote {
+  border-left: 5px solid #ccc;
+}
+
+ .top-pad {
+  padding-top: 20px;
+ }
+
+a {
+  color: #333;
+}
+.caption {
+  margin-top: 10px;
+}
+
+.section a {
+  text-decoration: underline;
+}
+
+#view-work-button {
+  text-decoration: none;
+}
+
+.card .card-content .card-title {
+  line-height: 36px;
+}
+
+.card-content {
+  overflow: auto;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+
+ img.activator {
+  min-height: 300px;
+  min-width: 700px;
+  overflow-x: hidden;
+}
+
+
+.hide-on-med-and-down,  .hide-on-med-and-down li {
+  height: 74px;
+}
+
+ .hide-on-med-and-down li {
+  padding-top: 6px;
+ }
+
+.callout {
+  background-color: #000000;
+  opacity:0.6;
+  filter:alpha(opacity=60); /* For IE8 and earlier */
+}
+
+ .black {
+  color: #000;
+ }
+
+ .black-background {
+  background-color: #000;
+ }
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.top-index {
+  z-index: 1000;
+}
+
+.button-panel {
+  font-size: 30px;
+  color: #fff;
+  height: 200px;
+  width: 100%;
+  position: relative;
+  top: 50%;
+  padding-top: 50px;
+}
+
+ .outer-wrap, .outer-wrap2, .section-bg {
+  background-color: #000;
+  height: 400px;
+ }
+
+#logo-container {
+  max-height: 70px;
+  
+  background-color: #000;
+}
+
+.logo-div {
+}
+
+nav {
+  height: 74px;
+}
+
+.transparent {
+    background-color: transparent;
+}
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #000;
+  margin-top: 9px;
+}
+
+.parallax-container {
+  line-height: 0;
+  height: 300px;
+  color: rgba(255,255,255,.9);
+}
+
+.parallax-container .section {
+    width: 100%;
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+
+
+  .parallax-container {
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+  .parallax-container {
+    height: 0px;
+  }
+
+
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+
+footer.page-footer {
+  margin: 0;
+}
