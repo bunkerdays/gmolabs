@@ -6,6 +6,26 @@
  * Made By MaterializeCSS.com
  */
 
+.opener {
+  position: absolute;
+  top: 223px;
+}
+
+.fadedImage {
+  opacity: 0;
+}
+
+ .footerheader {
+  background-image: url('../img/halftone.jpg');
+  background-repeat: repeat-x;
+  height: 100px;
+  background-position: -50%;
+ }
+
+ .fullwidth {
+  width: 100%;
+ }
+
  .left {
   text-align: left;
  }
@@ -51,6 +71,7 @@ a {
 
 .card .card-content .card-title {
   line-height: 36px;
+  margin-top: 5px;
 }
 
 .card-content {

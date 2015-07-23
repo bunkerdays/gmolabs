@@ -3202,12 +3202,12 @@ $(document).ready(function(){
     var element = $(selector);
     element.css({opacity: 0});
     $(element).velocity({opacity: 1}, {
-        duration: 650,
+        duration: 200,
         queue: false,
-        easing: 'easeOutSine'
+        easing: 'easeInOutExpo'
       });
     $(element).velocity({opacity: 1}, {
-          duration: 1300,
+          duration: 500,
           queue: false,
           easing: 'swing',
           step: function(now, fx) {

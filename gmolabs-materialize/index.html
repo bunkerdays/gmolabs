@@ -57,7 +57,7 @@
 
   <div id="index-banner" class="parallax-container valign-wrapper">
     <div class="parallax">
-        <img src="img/mesh.jpg" alt="Unsplashed background img 2">
+        <img id="banner1" class="fadedImage" src="img/mesh.jpg" alt="Unsplashed background img 2">
     </div>
     <!-- <div id="index-banner" class="parallax-container">
       <div class="parallax">
@@ -76,7 +76,7 @@
         </div>
       </div>
       <div class="row center">
-        <a href="#work" id="view-work-button" class="btn-large waves-effect waves-light grey darken-4 no-underline smoothnav">View Work</a>
+        <a href="#work" id="view-work-button" class="fadedImage btn-large waves-effect waves-light grey darken-4 no-underline smoothnav">View Work</a>
       </div>
     </div>
   </div>
@@ -93,7 +93,7 @@
 </div> -->
   
   <div id="work" class="row center">
-    <i class="material-icons flipped medium">navigation</i>
+    <i class="material-icons flipped medium ">navigation</i>
   </div>
 
   <div class="container">
@@ -103,61 +103,98 @@
       <!--   Icon Section   -->
       <div class="row">
        <!--  <p class="left-align light center flow-text">Work: A selection of the amazing clients and projects I've been involved with.</p> -->
-
-        <div class="card">
+      <div class="col s12 m12 l6">
+        <div id="card1" class="card fadedImage medium">
           <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="img/c74-max-logo.png">
+            <img target="#max-card" class="activator opener" src="img/c74-max-logo.png">
           </div>
+
           <div class="card-content activator">
-            <span class="card-title grey-text text-darken-4"><strong>Cycling'74</strong><i> Usability Engineer</i></span>
-            <span class="caption">
-            <p>From running C74's first usability tests to the formation of the Product Design team, I helped develop UX theory and practice throughout the company, making user research, prototyping, and iterative design a fundamental part of how C74 builds software.</p>
+
+            <span class="card-title grey-text text-darken-4 activator"><strong class="activator">Cycling'74</strong><i> UX Engineer</i></span>
+            <span class="caption activator">
+            <!-- <p>From running C74's first usability tests to the formation of the Product Design team, I helped develop UX theory and practice throughout the company, making user research, prototyping, and iterative design a fundamental part of how C74 builds software.</p> -->
+            <p class="activator">I helped make user research, prototyping, and iterative design a fundamental part of how C74 builds software.</p>
             
-            <blockquote><i>"Beyond the designs that we ended up implementing, Geoff left us with a large set of observations, concepts, and practices that transformed our organization for the better."<br>-David Zicarelli<br>CEO, Cycling ’74</i></blockquote>
-            <a class="btn-floating btn-small waves-effect waves-light black expander revealer"><i class="material-icons">expand_more</i></a>
+           <!--  <blockquote><i>"Beyond the designs that we ended up implementing, Geoff left us with a large set of observations, concepts, and practices that transformed our organization for the better."<br>-David Zicarelli<br>CEO, Cycling ’74</i></blockquote> -->
+            
+            
+            <a  target="#card1" class="btn-floating btn-small waves-effect waves-light black activator expander revealer opener"><i class="material-icons">expand_more</i></a>
 
           </div>
           <div class="card-reveal">
-            <a class="card-title btn-floating btn-small waves-effect waves-light black activator"><i class="material-icons">close</i></a>
-            <p class="flow-text">C74 makes Max/MSP, the premier graphical programming environment for media. It helps artists and musicians build their own software. If you want to make custom synthesizers, your own video mixing system or something a little...weirder...Max is the best tool for the job.
-            <p>I worked as a usability engineer at C'74 for for years. During that time we made usability a primary focus of our development of Max 7. We also released <a href="https://cycling74.com/products/mira/">Mira</a>, a zero-config iOS controller for Max.</p>
-            <p>From running C74's first usability tests to the formation of the Product Design team, I helped develop UX theory and practice throughout the company, making user research, prototyping, and iterative design a fundamental part of how C74 builds software.</p>
-            <p>Learn more at <a href="http://cycling74.com">cycling74.com</a>, or take a closer look at the new <a href="https://cycling74.com/max7/">UX improvements in Max 7</a>.</p></span>
-            <a class="card-title btn-floating btn-small waves-effect waves-light black activator"><i class="material-icons">close</i></a>
+            <a class="card-title btn-floating btn-small waves-effect waves-light black activator fixed"><i class="material-icons">expand_less</i></a>
+            <blockquote><i>"Beyond the designs that we ended up implementing, Geoff left us with a large set of observations, concepts, and practices that transformed our organization for the better."<br>-David Zicarelli<br>CEO, Cycling ’74</i></blockquote>
+            <p class="activator"><a href="https://cycling74.com/" target="_blank">Cycling '74</a> makes <strong>Max</strong>, the premier graphical programming environment for media. Max helps artists and musicians build their own software. If you want to make custom synthesizers, your own video mixing system or something a little, well, weirder, Max is the best tool for the job.</p>
+            <div class="row center">            
+              <img class="responsive-img fullwidth" src='img/max.gif'>
+              <p><i>"Patching" - drawing connections between modular code blocks.</i></p>
+            </div>
+            <p class="">I worked as a usability engineer at C'74 for four years. During that time we made usability a primary focus of our development of <a href="https://cycling74.com/" target="_blank">Max 7</a>. We also released <a href="https://cycling74.com/products/mira/">Mira</a>, a zero-config iOS controller for Max, and a new version of <a href="https://www.ableton.com/en/live/max-for-live/" target="_blank">Max For Live</a>, our plugin authoring platform for Ableton Live.</p><br>
+            <div class="row center">
+              <img class="responsive-img fullwidth" src='img/mira1.jpg'>
+              <p><i>Mira, the zero-config Max controller for iOS, in situ.</i></p>
+            </div>
+            <p class="">From running C74's first usability tests to the formation of the Product Design team, I helped develop UX theory and practice throughout the company, making user research, prototyping, and iterative design a fundamental part of how C74 builds software.</p><br>
+            <div class="row center">
+              <div class="col s6">
+                <img class="responsive-img fullwidth" src='img/max-before.png'>
+              </div>
+              <div class="col s6">
+                <img class="responsive-img fullwidth" src='img/max-after.png'>
+              </div>
+              <p><i>Piping webcam video to a GL texture, before and after Max 7 UX improvements.</i></p>
+            </div>
+            <p class="">Learn more at <a href="http://cycling74.com" target="_blank">cycling74.com</a>, or take a closer look at the new <a href="https://cycling74.com/max7/" target="_blank">UX improvements in Max 7</a>.</p></span>
+            <a class="card-title btn-floating btn-small waves-effect waves-light black activator"><i class="material-icons">expand_less</i></a>
             </div>
         </div>
-
-        <div class="card">
+      </div>
+      <div class="col s12 m12 l6">
+        <div class="card fadedImage medium" id="card2">
           <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="img/envelop-towers-logo-large.png">
+            <img class="activator opener" target="#envelop-card" src="img/envelop-towers-logo-large.png">
           </div>
           <div class="card-content">
             <span class="card-title grey-text text-darken-4"><strong>ENVELOP</strong><i> UX Consultant</i></span>
-            <p>I worked with ENVELOP to develop a UI for their immersive audio platform. This interface allows musicians to create three dimensional compositions for ambisonic performance.
+            <p>I helped ENVELOP develop a UI for their immersive audio platform.
              <!-- Learn more at <a href="http://envelop.us">envelop.us</a> -->
            </p>
-            <a class="btn-floating btn-small waves-effect waves-light black activator expander revealer"><i class="material-icons">expand_more</i></a>
+            <a  target="#envelop-card" class="btn-floating btn-small waves-effect waves-light black activator expander revealer opener"><i class="material-icons">expand_more</i></a>
           </div>
           <div class="card-reveal">
             <a class="card-title btn-floating btn-small waves-effect waves-light black activator"><i class="material-icons">close</i></a>
-            <p class="flow-text">ENVELOP is a 3D sound platform that introduces an open source software toolkit and educational initiatives to help any artist align their creativity with new technologies for creating music in three dimensions.</p>
-            <p>The foundation of ENVELOP’s technology is <a href="https://en.wikipedia.org/wiki/Ambisonics">Ambisonics</a>, an innovative open source sound mapping technique. Using Ambisonics, artists determine a virtual location in space where they want to place a sound source, which is then rendered to a spherical array of speakers.  ENVELOP is 28.4 channel Ambisonic sound system can position and move sound elements above, below, in front of, behind, and completely around an audience. A high-fidelity video projection system and LED lights embedded within the ENVELOP columns can be controlled in unison with audio to build synchronized audio/visual compositions.</p>
-            <p>I worked with Envelop to develop a UI for their immersive audio platform. This interface allows musicians to create three dimensional compositions for ambisonic performance. Learn more at <a href="http://envelop.us">envelop.us</a></p>
+            <p class="">I worked with <a target="_blank" href="http://envelop.us">Envelop</a> to develop a UI for their immersive audio platform. This interface allows musicians to create three dimensional compositions for ambisonic performance.</p>
+            <div class="row center">
+              <img class="responsive-img fullwidth" src='img/envelop4.png'>
+              <p><i>Envelop speaker towers concept sketch</i></p>
+            </div>
+            <p class="">The foundation of ENVELOP’s technology is <a href="https://en.wikipedia.org/wiki/Ambisonics">Ambisonics</a>, an innovative open source sound mapping technique. Using Ambisonics, artists determine a virtual location in space where they want to place a sound source, which is then rendered to a spherical array of speakers.  ENVELOP is 28.4 channel Ambisonic sound system can position and move sound elements above, below, in front of, behind, and completely around an audience. A high-fidelity video projection system and LED lights embedded within the ENVELOP columns can be controlled in unison with audio to build synchronized audio/visual compositions.</p>
+            <div class="row center">
+              <img class="responsive-img fullwidth" src='img/envelop6.png'>
+              <p><i>Envelop interface prototype</i></p>
+            </div>
+            <p class="">ENVELOP's Kickstarter campaign successfully funded the fabrication and installation of the ambisonic environment at the new media performance center, <a href="http://www.themidwaysf.com/" target="_blank">The Midway</a>, opening summer 2015 in San Francisco. If you'd like to get involved, check out the <a href="https://github.com/EnvelopSF" target="_blank">github repo</a>.</p>
+            
+            
             <a class="card-title btn-floating btn-small waves-effect waves-light black activator"><i class="material-icons">close</i></a>
           </div>
         </div>
-
-        <div class="card">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m12 l6">
+        <div class="card fadedImage medium" id="card3">
           <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="img/afield2.png">
+            <img class="activator opener"  target="#afield-card" src="img/afield2.png">
           </div>
           <div class="card-content">
-            <span class="card-title grey-text text-darken-4"><strong>Afield</strong><i> Concept, Design</i></span>
+            <span class="card-title grey-text text-darken-4"><strong>Afield</strong><i> Mobile UX</i></span>
             <p>
               Afield is a project to create spatialized field recordings using your mobile device.
               <!-- <a href="#">afieldapp.com</a> -->
             </p>
-            <a class="btn-floating btn-small waves-effect waves-light black activator expander revealer"><i class="material-icons">expand_more</i></a>
+            <a target="#afield-card" class="btn-floating btn-small waves-effect waves-light black activator expander revealer opener"><i class="material-icons">expand_more</i></a>
           </div>
           <div class="card-reveal">
             <a class="card-title btn-floating btn-small waves-effect waves-light black activator"><i class="material-icons">close</i></a>
@@ -168,29 +205,39 @@
             <a class="card-title btn-floating btn-small waves-effect waves-light black activator"><i class="material-icons">close</i></a>
           </div>
         </div>
-
-        <div class="card">
+      </div>
+      <div class="col s12 m12 l6">
+        <div class="card fadedImage medium" id="card4">
           <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="img/futurefarmers-logo-white.png">
+            <img class="activator opener" target="#futurefarmers-card" src="img/futurefarmers-logo-white.png">
           </div>
           <div class="card-content">
-            <span class="card-title heavy grey-text text-darken-4 flow-text"><strong>Futurefarmers</strong><i> Front-End Dev, PM</i></span>
+            <span class="card-title heavy grey-text text-darken-4 flow-text"><strong>Futurefarmers</strong><i> UX, PM</i></span>
             <p>
               <!-- <a href="http://futurefarmers.com">futurefarmers.com</a> -->
               I worked with the Art/Design collective Futurefarmers to develop websites, installations, and immersive experiences.
             </p>
-            <a class="btn-floating btn-small waves-effect waves-light black activator expander revealer"><i class="material-icons">expand_more</i></a>
+            <a target="#futurefarmers-card" class="btn-floating btn-small waves-effect waves-light black activator expander revealer opener"><i class="material-icons">expand_more</i></a>
           </div>
           <div class="card-reveal">
             <a class="card-title btn-floating btn-small waves-effect waves-light black activator"><i class="material-icons">close</i></a>
-            <p class="flow-text">I first started working with Futurefarmers after taking one of founder Amy Franceschini's classes, Digital Art in Public Spaces. Working with Futurefarmers gave me my first experience in web development and interaction design and had a deep influence in my ongoing interests in art, technology, and community.</p>
+            <p class="">I first started working with Futurefarmers after taking one of founder Amy Franceschini's classes, Digital Art in Public Spaces. Working with Futurefarmers gave me my first experience in web development and interaction design and had a deep influence in my ongoing interests in art, technology, and community.</p>
+            <div class="row center">
+              <img class="responsive-img fullwidth" src='img/ff1.png'>
+              <p><i>The Free Soil project - mapping superfund sites in the Bay Area</i></p>
+            </div>
             <blockquote>Futurefarmers is a group of diverse practitioners aligned through an interest in making work that is relevant to the time and place surrounding us. Founded in 1995, the design studio serves as a platform to support art projects, an artist in residence program and our research interests. We are artists, researchers, designers, architects, scientists and farmers with a common interest in creating frameworks for exchange that catalyze moments of "not knowing". </blockquote>
             <p>One project I consulted on, TransportationTown, was featured in the MOMA's Interactive Design exhibit, <a href="http://www.moma.org/interactives/exhibitions/2011/talktome/objects/140010/">Talk to Me</a>.
+            <div class="row center">
+              <img class="responsive-img fullwidth" src='img/ff2.jpg'>
+              <p><i>Transportation Town - a city planning simulation game</i></p>
+            </div>
             <p>Learn more about Futurefarmers at <a href="http://futurefarmers.com">futurefarmers.com</a></p>
             <a class="card-title btn-floating btn-small waves-effect waves-light black activator"><i class="material-icons">close</i></a>
           </div>
         </div>
-
+      </div>
+    </div>
       </div>
     </div>
   </div>
@@ -225,7 +272,7 @@
 
       <div class="row">
         <div class="col s12 m4">
-          <div class="icon-block fadedImage">
+          <div id="thing1" class="icon-block fadedImage">
             <h2 class="center black-text"><i class="material-icons medium">face</i></h2>
             <h5 class="center">User Research</h5>
 
@@ -234,7 +281,7 @@
         </div>
 
         <div class="col s12 m4">
-          <div class="icon-block fadedImage">
+          <div id="thing2" class="icon-block fadedImage">
             <h2 class="center black-text"><i class="material-icons medium">dashboard</i></h2>
             <h5 class="center">Storyboarding</h5>
 
@@ -243,7 +290,7 @@
         </div>
 
         <div class="col s12 m4">
-          <div class="icon-block fadedImage">
+          <div id="thing3" class="icon-block fadedImage">
             <h2 class="center black-text"><i class="material-icons medium">language</i></h2>
             <h5 class="center">Wireframes</h5>
 
@@ -254,7 +301,7 @@
       <div class="row">
 
         <div class="col s12 m4">
-          <div class="icon-block fadedImage">
+          <div id="thing4" class="icon-block fadedImage">
             <h2 class="center black-text"><i class="material-icons medium">blur_on</i></h2>
             <h5 class="center">UI Design</h5>
 
@@ -263,7 +310,7 @@
         </div>
 
         <div class="col s12 m4">
-          <div class="icon-block fadedImage">
+          <div id="thing5" class="icon-block fadedImage">
             <h2 class="center black-text"><i class="material-icons medium">build</i></h2>
             <h5 class="center">Front End Dev</h5>
             <p class="light">I'm always learning new tools and platforms. That's given me a broad base in modern frameworks for web and mobile development that allows me to quickly mockup interactive prototypes</p>
@@ -271,7 +318,7 @@
         </div>
 
         <div class="col s12 m4">
-          <div class="icon-block fadedImage">
+          <div id="thing6" class="icon-block fadedImage">
             <h2 class="center black-text"><i class="material-icons medium">assessment</i></h2>
             <h5 class="center">Testing</h5>
 
@@ -306,10 +353,15 @@
 
   </div> -->
 
+ <!--  <div class="parallax-container valign-wrapper">
+    <div class="parallax">
+        <img src="img/background2.jpg" alt="Unsplashed background img 2">
+    </div>
+  </div> -->
 
 
-
-  <footer id="contact" class="page-footer black">
+  <!-- <div class="fullwidth footerheader"></div> -->
+  <footer id="contact" class="page-footer white">
     <div class="container">
       <div class="row">
         
@@ -326,18 +378,18 @@
           </div>
         </div> -->
         <div class="col s12 m12 center">
-          <div class="icon-block">
+          <div id="portrait" class="icon-block fadedImage">
             <h2 class="center"><img src="img/headshot.png" class="circle headshot"></h2>
-            <h5 class="center grey-text light">Hi, I'm Geoff Morris.</h5>
+            <h5 class="center light">Hi, I'm Geoff Morris.</h5>
             <div class="row">
-              <p class="grey-text left flow-text light">I'm a UX professional with a Masters Degree in Cognitive Science and a decade of experience working with organizations big and small, building tools to enhance human creativity. I live in San Francisco. If you'd like to work together, download my resume or drop me a line.</p>
+              <p class="left flow-text light">I'm a UX professional with a Masters Degree in Cognitive Science and ten years of experience working with organizations big and small, building tools to enhance human creativity. I live in San Francisco. If you'd like to work together, download my resume or drop me a line.</p>
             </div>
             <div class="row">
               <div class="row center">
-                <a href="img/Resume.pdf" target="_blank" id="view-work-button" class="btn waves-effect waves-light grey darken-4 no-underline"><i class="material-icons left">file_download</i>Resume</a>
+                <a href="img/Resume.pdf" target="_blank" class="btn waves-effect waves-light grey darken-4 no-underline"><i class="material-icons left">file_download</i>resume</a>
               </div>
               <div class="row center">
-                <a href="mailto:geoff@gmolabs.com" target="_blank" id="view-work-button" class="btn waves-effect waves-light grey darken-4 no-underline"><i class="material-icons left">email</i>Email</a>
+                <a href="mailto:geoff@gmolabs.com" target="_blank" class="btn waves-effect waves-light grey darken-4 no-underline"><i class="material-icons left">email</i>Email</a>
 
               <br><br>
               <br><br>
