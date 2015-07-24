@@ -5,8 +5,11 @@
     $('.parallax').parallax();
     $('.slider').slider({full_width: true});
     $('.materialboxed').materialbox();
+    
+    imagesLoaded( '#banner1', function() {
+        Materialize.fadeInImage("#banner1");
+    });
 
-    Materialize.fadeInImage("#banner1");
     Materialize.fadeInImage("#view-work-button");
 
     // Materialize.fadeInImage("#work");
