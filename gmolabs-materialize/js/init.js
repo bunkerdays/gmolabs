@@ -4,9 +4,11 @@
     $('.button-collapse').sideNav();
     $('.parallax').parallax();
     $('.slider').slider({full_width: true});
+    $('.materialboxed').materialbox();
 
     Materialize.fadeInImage("#banner1");
     Materialize.fadeInImage("#view-work-button");
+
     // Materialize.fadeInImage("#work");
     // $('.materialboxed').materialbox();
 
@@ -46,6 +48,29 @@
         });
     });
 
+    $(".card-image").hover(function(e) {
+       //expand background image
+       $(this).animate({
+            
+       })
+    });
+
+    var isDragging = false;
+    $("backnav")
+    .mousedown(function() {
+        isDragging = false;
+    })
+    .mousemove(function() {
+        isDragging = true;
+     })
+    .mouseup(function(e) {
+        var wasDragging = isDragging;
+        isDragging = false;
+        if (wasDragging) {
+           e.preventDefault();
+        }
+    });
+
     // $(".opener").click(function(e) {
     //     // e.preventDefault();
     //     $('html, body').animate({
@@ -59,7 +84,6 @@
     //         // 'easeInOutExpo' is supported with jQuery UI
     //     });
     // });
-
 
     
   }); // end of document ready

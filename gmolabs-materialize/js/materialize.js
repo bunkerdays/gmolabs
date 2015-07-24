@@ -811,7 +811,7 @@ if ($) { Vel = $.Velocity } else { Vel = Velocity};
           });
           // Animate Overlay
           $('body').append(overlay);
-          overlay.velocity({opacity: 1}, {duration: inDuration, queue: false, easing: 'easeOutQuad'}
+          overlay.velocity({opacity: .5}, {duration: inDuration, queue: false, easing: 'easeOutQuad'}
             );
 
 
@@ -848,14 +848,13 @@ if ($) { Vel = $.Velocity } else { Vel = Velocity};
         if(origin.hasClass('responsive-img')) {
           origin.velocity({'max-width': newWidth, 'width': originalWidth}, {duration: 0, queue: false,
             complete: function(){
-              origin.css({left: 0, top: 0})
+              origin.css({left: 0, top: 0, opacity: .99})
               .velocity(
                 {
                   height: newHeight,
                   width: newWidth,
                   left: $(document).scrollLeft() + windowWidth/2 - origin.parent('.material-placeholder').offset().left - newWidth/2,
-                  top: $(document).scrollTop() + windowHeight/2 - origin.parent('.material-placeholder').offset().top - newHeight/ 2
-                },
+                  top: $(document).scrollTop() + windowHeight/2 - origin.parent('.material-placeholder').offset().top - newHeight/ 2                },
                 {
                   duration: inDuration,
                   queue: false,
@@ -3079,7 +3078,7 @@ $(document).ready(function(){
 
     $(document).on('click.card', '.card', function (e) {
       if ($(this).find('.card-reveal').length) {
-        if ($(e.target).is($('.card-reveal .card-title')) || $(e.target).is($('.card-reveal .card-title i'))) {
+        if ($(e.target).is($('.card-reveal .card-title')) || $(e.target).is($('.backnav')) || $(e.target).is($('.card-reveal .card-title i'))) {
           // Make Reveal animate down and display none
           $(this).find('.card-reveal').velocity(
             {translateY: 0}, {

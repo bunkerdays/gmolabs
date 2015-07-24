@@ -6,6 +6,7 @@
  * Made By MaterializeCSS.com
  */
 
+
 .opener {
   position: absolute;
   top: 223px;
@@ -67,6 +68,10 @@ a {
 
 #view-work-button {
   text-decoration: none;
+}
+
+.card, .card-reveal {
+  position: relative;
 }
 
 .card .card-content .card-title {
