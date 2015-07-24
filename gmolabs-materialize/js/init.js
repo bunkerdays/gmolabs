@@ -6,9 +6,9 @@
     $('.slider').slider({full_width: true});
     $('.materialboxed').materialbox();
     
-    imagesLoaded( '#banner1', function() {
+    // imagesLoaded( '#banner1', function() {
         Materialize.fadeInImage("#banner1");
-    });
+    // });
 
     Materialize.fadeInImage("#view-work-button");
 
