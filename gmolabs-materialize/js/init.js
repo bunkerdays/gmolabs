@@ -51,11 +51,21 @@
         });
     });
 
-    $(".card-image").hover(function(e) {
-       //expand background image
-       $(this).animate({
-            
-       })
+    var current_h;
+    var current_w;
+    $("img.opener").hover(function(e) {
+        //expand background image
+        current_h = $(this).height();
+        current_w = $(this).width();
+            $(this).stop(true, false).animate({
+                width: (current_w * 1.3),
+                height: (current_h * 1.3)
+            }, 500, 'easeOutExpo');
+        }, function() {
+            $(this).stop(true, false).animate({
+                width: current_w + 'px',
+                height: current_h + 'px'
+            }, 500, 'easeOutExpo');
     });
 
     var isDragging = false;

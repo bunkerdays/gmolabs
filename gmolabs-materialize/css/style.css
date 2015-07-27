@@ -204,6 +204,10 @@ p {
     height: 0px;
   }
 
+  .card-title {
+    font-size: 20px;
+  }
+
 
 }
 
