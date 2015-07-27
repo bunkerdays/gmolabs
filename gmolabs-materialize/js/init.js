@@ -25,10 +25,10 @@
         {selector: '#thing4', offset: 50, callback: 'Materialize.fadeInImage("#thing4")' },
         {selector: '#thing5', offset: 50, callback: 'Materialize.fadeInImage("#thing5")' },
         {selector: '#thing6', offset: 50, callback: 'Materialize.fadeInImage("#thing6")' },
-        {selector: '#card1', offset: 50, callback: 'Materialize.fadeInImage("#card1")' },
-        {selector: '#card2', offset: 50, callback: 'Materialize.fadeInImage("#card2")' },
-        {selector: '#card3', offset: 50, callback: 'Materialize.fadeInImage("#card3")' },
-        {selector: '#card4', offset: 50, callback: 'Materialize.fadeInImage("#card4")' },
+        // {selector: '#card1', offset: 50, callback: 'Materialize.fadeInImage("#card1")' },
+        // {selector: '#card2', offset: 50, callback: 'Materialize.fadeInImage("#card2")' },
+        // {selector: '#card3', offset: 50, callback: 'Materialize.fadeInImage("#card3")' },
+        // {selector: '#card4', offset: 50, callback: 'Materialize.fadeInImage("#card4")' },
         {selector: '#portrait', offset: 50, callback: 'Materialize.fadeInImage("#portrait")' }
         // {selector: '#thing1', offset: 500, callback: 'alert("scrollfire")' }
       ];
