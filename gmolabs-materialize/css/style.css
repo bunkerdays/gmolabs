@@ -6,6 +6,9 @@
  * Made By MaterializeCSS.com
  */
 
+  .card-title strong, .card-title i {
+    font-size: 20px;
+  }
 
 .opener {
   position: absolute;
@@ -204,9 +207,6 @@ p {
     height: 0px;
   }
 
-  .card-title {
-    font-size: 20px;
-  }
 
 
 }
