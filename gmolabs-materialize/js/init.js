@@ -68,6 +68,8 @@
             }, 500, 'easeOutExpo');
     });
 
+
+
     var isDragging = false;
     $("backnav")
     .mousedown(function() {
@@ -84,11 +86,12 @@
         }
     });
 
-    // $(".opener").click(function(e) {
+    // $(".card").click(function(e) {
     //     // e.preventDefault();
-    //     $('html, body').animate({
+    //     //alert($(this).find(".card-reveal").height());
+    //     $('this').animate({
     //         // scrollTop: $($(this).parent().parent()).offset().top-70
-    //         scrollTop: $($(this).attr("target")).offset().top-70
+    //         height: $(this).find(".card-reveal").height()
     //     }, 
     //     {
     //         duration: 200,
@@ -97,6 +100,19 @@
     //         // 'easeInOutExpo' is supported with jQuery UI
     //     });
     // });
+
+    // $(".card").click(function(e) {
+    //     //alert($(this).offset().top);
+    //     $('html, body').animate({
+    //         scrollTop: $(this).offset().top-$("#top").height()-20
+    //     }, 
+    //     {
+    //         duration: 200,
+    //         easing: 'easeInOutExpo'
+    //         // try using 'swing' too
+    //         // 'easeInOutExpo' is supported with jQuery UI
+    //     });
+    // })
 
     
   }); // end of document ready
