@@ -3092,7 +3092,7 @@ $(document).ready(function(){
 
           $(this).velocity(
       			{ height: 400},{
-        	  		duration: 225,
+        	  		duration: 400,
         	  		queue: false,
         	  		easing: 'easeInOutQuad',
         	  		// complete: function() { $(this).css({ display: 'none'}) }
@@ -3101,7 +3101,7 @@ $(document).ready(function(){
 
           $(this).find('.card-reveal').velocity(
             {translateY: 0}, {
-              duration: 225,
+              duration: 400,
               queue: false,
               easing: 'easeInOutQuad',
               complete: function() { $(this).css({ display: 'none'}) }
@@ -3119,7 +3119,7 @@ $(document).ready(function(){
 	        //alert(fullHeight);
           	$(this).velocity(
       			{ height: fullHeight},{
-        	  		duration: 225,
+        	  		duration: 400,
         	  		queue: false,
         	  		easing: 'easeInOutQuad',
         	  		// complete: function() { $(this).css({ display: 'none'}) }
