@@ -224,6 +224,11 @@ p {
     margin-bottom: 2px;
   }
 
+  .mdi-navigation-menu {
+    position: relative;
+    top: 1px;
+  }
+
 }
 
 .icon-block {
