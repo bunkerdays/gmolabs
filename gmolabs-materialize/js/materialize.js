@@ -3080,6 +3080,16 @@ $(document).ready(function(){
       if ($(this).find('.card-reveal').length) {
         if ($(e.target).is($('.card-reveal .card-title')) || $(e.target).is($('.backnav')) || $(e.target).is($('.card-reveal .card-title i'))) {
           // Make Reveal animate down and display none
+		$('html, body').animate({
+            scrollTop: $(this).offset().top-$("#top").height()-20
+	        }, 
+	        {
+	            duration: 225,
+	            easing: 'easeInOutExpo'
+	            // try using 'swing' too
+	            // 'easeInOutExpo' is supported with jQuery UI
+        });
+
           $(this).velocity(
       			{ height: 400},{
         	  		duration: 225,
@@ -3098,15 +3108,7 @@ $(document).ready(function(){
             }
           );
 
-          $('html, body').animate({
-            scrollTop: $(this).offset().top-$("#top").height()-20
-	        }, 
-	        {
-	            duration: 500,
-	            easing: 'easeInOutExpo'
-	            // try using 'swing' too
-	            // 'easeInOutExpo' is supported with jQuery UI
-        });
+          
           
         }
         else if ($(e.target).is($('.card .activator')) ||
