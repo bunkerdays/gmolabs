@@ -3090,21 +3090,41 @@ $(document).ready(function(){
 	            // 'easeInOutExpo' is supported with jQuery UI
         });
 
-          $(this).velocity(
-      			{ height: 400},{
-        	  		duration: 400,
-        	  		queue: false,
-        	  		easing: 'easeInOutQuad',
-        	  		// complete: function() { $(this).css({ display: 'none'}) }
-        		}
-          	);
+         //  $(this).velocity(
+      			// { height: 400},{
+        	//   		duration: 400,
+        	//   		queue: false,
+        	//   		easing: 'easeInOutQuad',
+        	//   		// complete: function() { $(this).css({ display: 'none'}) }
+        	// 	}
+         //  	);
 
           $(this).find('.card-reveal').velocity(
             {translateY: 0}, {
               duration: 400,
               queue: false,
               easing: 'easeInOutQuad',
-              complete: function() { $(this).css({ display: 'none'}) }
+              complete: function() { 
+              	$(this).css({ display: 'none'});
+              	$(this).parent().velocity(
+      			{ height: 400},{
+        	  		duration: 400,
+        	  		queue: false,
+        	  		easing: 'easeInOutQuad',
+        	  		complete: function() { 
+        	  			$('html, body').animate({
+				            scrollTop: $(this).offset().top-$("#top").height()-20
+					        }, 
+					        {
+					            duration: 400,
+					            easing: 'easeInOutExpo'
+					            // try using 'swing' too
+					            // 'easeInOutExpo' is supported with jQuery UI
+				        });
+        	  		}
+        		}
+          	);
+              }
             }
           );
 
