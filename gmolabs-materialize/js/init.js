@@ -53,20 +53,23 @@
 
     var current_h;
     var current_w;
-    $(".card").hover(function(e) {
-        //expand background image
-        current_h = $(this).find("img.opener").height();
-        current_w = $(this).find("img.opener").width();
-            $(this).find("img.opener").stop(true, false).animate({
-                width: (current_w * 1.1),
-                height: (current_h * 1.1)
-            }, 500, 'easeOutExpo');
-        }, function() {
-            $(this).find("img.opener").stop(true, false).animate({
-                width: current_w + 'px',
-                height: current_h + 'px'
-            }, 500, 'easeOutExpo');
-    });
+
+    if(!Modernizr.touch) {
+        $(".card").hover(function(e) {
+            //expand background image
+            current_h = $(this).find("img.opener").height();
+            current_w = $(this).find("img.opener").width();
+                $(this).find("img.opener").stop(true, false).animate({
+                    width: (current_w * 1.1),
+                    height: (current_h * 1.1)
+                }, 500, 'easeOutExpo');
+            }, function() {
+                $(this).find("img.opener").stop(true, false).animate({
+                    width: current_w + 'px',
+                    height: current_h + 'px'
+                }, 500, 'easeOutExpo');
+        });
+    }
 
 
 

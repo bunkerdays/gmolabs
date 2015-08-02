@@ -3084,7 +3084,7 @@ $(document).ready(function(){
             scrollTop: $(this).offset().top-$("#top").height()-20
 	        }, 
 	        {
-	            duration: 225,
+	            duration: 400,
 	            easing: 'easeInOutExpo'
 	            // try using 'swing' too
 	            // 'easeInOutExpo' is supported with jQuery UI
